@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.payment.PaymentActivity"
+    android:id="@+id/addHouseLayout"
+           >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/logo"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="anime.json"
+                app:lottie_loop="true"
+                android:layout_gravity="center_horizontal"
+                />
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addHouseMainCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:elevation="40dp"
+            app:cardCornerRadius="25dp"
+            app:cardPreventCornerOverlap="true"
+            android:layout_gravity="center_horizontal"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tenant_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tenant Name"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/password"
+                android:imeOptions="actionDone"
+                />
+            <EditText
+                android:id="@+id/tenant_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1234567890"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:drawableLeft="@drawable/phone1"
+
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:id="@+id/tenant_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e.g tenant@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/mail"
+
+                android:imeOptions="actionDone"
+
+                />
+            <EditText
+                android:id="@+id/amtPaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount Paid"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/wallet"
+
+                android:imeOptions="actionDone"
+
+                />
+            <EditText
+                android:id="@+id/shiftingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Shifting Date e.g 12/12/12"
+                android:inputType="date"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/date"
+
+                android:imeOptions="actionDone"
+
+                />
+            <EditText
+                android:id="@+id/paymentDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Payment Date"
+                android:inputType="number"
+                android:textAllCaps="true"
+                android:padding="20dp"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/date"
+                android:imeOptions="actionDone"
+
+                />
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/cancelpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:drawableRight="@drawable/cancel"
+                    android:elevation="30dp"
+                    android:text="Cancel"
+                    app:cornerRadius="200dp"
+                    android:backgroundTint="@color/black"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/acceptpayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:drawableRight="@drawable/pay"
+                    android:elevation="30dp"
+                    android:text="Pay"
+                    app:cornerRadius="200dp"
+                    android:backgroundTint="@color/green"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

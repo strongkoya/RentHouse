@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/customer_request_list_customview"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/cardbackground"
+        android:onClick="onCardViewClicked"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Media -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                app:srcCompat="@drawable/house_banner"
+                android:scaleType="centerCrop"
+                android:contentDescription="It is a house image"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Buttons -->
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <!-- Title, secondary and supporting text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi,India"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/address_txtview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text=" loca address will be here"
+                        android:maxLength="70"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="?android:attr/textColorSecondary" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:text="4BHK"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginRight="3dp"
+                    app:cornerRadius="15dp"
+                    app:elevation="8dp"
+
+                    android:layout_marginLeft="6dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1000"
+                    app:cornerRadius="15dp"
+                    app:elevation="8dp"
+                    app:backgroundTint="@color/green"
+                    android:layout_marginEnd="6dp"
+
+                    android:layout_marginRight="6dp" />
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="View Detail"
+
+                    android:layout_marginStart="6dp"
+                    android:layout_marginRight="8dp"
+                    app:cornerRadius="15dp"
+                    app:elevation="8dp"
+
+                    android:layout_marginLeft="6dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="call"
+                    app:cornerRadius="15dp"
+                    app:elevation="8dp"
+                    app:backgroundTint="@color/green"
+                    android:layout_marginEnd="8dp"
+
+                    android:layout_marginRight="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    app:cornerRadius="15dp"
+                    app:elevation="8dp"
+                    app:backgroundTint="@color/green"
+                    android:layout_marginEnd="8dp"
+
+                    android:layout_marginRight="8dp" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request Sent to owner"
+                app:cornerRadius="15dp"
+                app:elevation="8dp"
+                app:backgroundTint="@color/purple_500"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>
